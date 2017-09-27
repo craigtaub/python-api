@@ -13,7 +13,7 @@ Add test + src to system path.
     
 Run tests:
 
-        python test/test_mapped.py
+        python test/test_mapped.py -v
 
 ## Tools
 - Flask - http://flask.pocoo.org/

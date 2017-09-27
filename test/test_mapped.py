@@ -3,7 +3,7 @@
 import unittest
 from mapped import process
 
-class TestUM(unittest.TestCase):
+class TestMapped(unittest.TestCase):
     def setUp(self):
         pass
 
