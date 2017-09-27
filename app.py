@@ -1,6 +1,8 @@
 # pylint: disable=C0111
 
 from flask import Flask, render_template
+from mapped import process
+
 APP = Flask(__name__)
 
 @APP.route("/")
@@ -13,4 +15,5 @@ def route1():
 
 @APP.route('/post/<int:post_id>')
 def show_post(post_id): # integer
-    return 'Post %d' % post_id
+    mapped_it = process(post_id)
+    return 'Post %d' % mapped_it
