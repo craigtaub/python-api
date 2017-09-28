@@ -15,5 +15,9 @@ Run tests:
 
         python test/test_mapped.py -v
 
+## Setup
+        sudo easy_install pip
+        sudo pip install Flask 
+
 ## Tools
 - Flask - http://flask.pocoo.org/
