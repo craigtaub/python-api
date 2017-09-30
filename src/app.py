@@ -1,7 +1,7 @@
 # pylint: disable=C0111
 
 from flask import Flask, render_template, jsonify
-from mapped import process
+from mapped import process, find
 import logging
 
 APP = Flask(__name__)
@@ -19,20 +19,19 @@ def route1():
     return render_template('hello.html', name="Craig")
 
 
-# Process url param and return
+# Process url param, log it and return
 @APP.route('/post/<int:post_id>') # integer
 def show_post(post_id):
     mapped_it = process(post_id)
+    logging.warning('Log to terminal post_id %d', post_id)
     return 'Post %d' % mapped_it
+
 
 # Process url param, log, JSON return it
 @APP.route('/api/<int:post_id>')
 def api(post_id):
-    
-    mapped_it = process(post_id)
-    logging.warning('Log to terminal post_id %d', post_id) # log it
-
+    foundName = find(post_id)
     return jsonify(
-        id=mapped_it,
+        name=foundName,
         key="value"
     )

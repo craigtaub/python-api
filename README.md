@@ -17,7 +17,7 @@ Run tests:
 
 ## Setup
         sudo easy_install pip
-        sudo pip install Flask 
+        sudo pip install -r requirements.txt
 
 ## Tools
 - Flask - http://flask.pocoo.org/
