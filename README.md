@@ -10,6 +10,8 @@ Example REST API in Python with flask.
 Add test + src to system path.
 
         export PYTHONPATH=/Users/craig/Documents/python/api/src:/Users/craig/Documents/python/api/test
+
+        export PYTHONPATH=/Users/craigtaub/Documents/python/python-api/src:/Users/craigtaub/Documents/python/python-api/test
     
 Run tests:
 
@@ -21,3 +23,8 @@ Run tests:
 
 ## Tools
 - Flask - http://flask.pocoo.org/
+
+## Issues
+Mock install issue.
+
+        sudo -H pip install --ignore-installed mock==1.0.1
