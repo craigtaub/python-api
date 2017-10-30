@@ -1,10 +1,10 @@
 # REST API
 
-Example REST API in Python with flask.
+Example REST API in Python.
 
 ## Run dev mode
 
-        FLASK_DEBUG=1 FLASK_APP=src/app.py flask run
+        python3 src/app.py
 
 ## Run unit tests
 Add test + src to system path.
@@ -19,10 +19,7 @@ Run tests:
 
 ## Setup
         sudo easy_install pip
-        sudo pip install -r requirements.txt
-
-## Tools
-- Flask - http://flask.pocoo.org/
+        sudo pip3 install -r requirements.txt
 
 ## Issues
 Mock install issue.
